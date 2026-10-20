@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Internship at Cognifyz Technologies</title>
+  <link rel="stylesheet" href="cognifyz-internship.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#">Cognifyz Internships</a>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#apply">Apply Now</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-badge">
+          <span></span>
+          Applications open for the next cohort
+        </div>
+        <p class="eyebrow">Internship Program</p>
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+        <p>
+          Build real-world front-end projects, improve your portfolio, and learn
+          development workflows through a guided internship experience.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#apply">Apply Now</a>
+          <a class="secondary-button" href="#overview">Learn More</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Internship quick facts">
+        <div class="card-orbit"></div>
+        <span>Duration</span>
+        <strong>4 to 8 weeks</strong>
+        <span>Mode</span>
+        <strong>Remote / project-based</strong>
+        <span>Focus</span>
+        <strong>HTML, CSS, JavaScript</strong>
+        <div class="countdown-box">
+          <span>Next review window</span>
+          <strong id="countdown">Calculating...</strong>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section id="overview" class="section split-section">
+      <div>
+        <p class="eyebrow">Program Overview</p>
+        <h2>Learn by building practical web projects.</h2>
+        <p>
+          This web developer internship is designed for students and beginners
+          who want structured practice in responsive design, JavaScript
+          interactions, UI components, and project presentation.
+        </p>
+      </div>
+      <div class="timeline-card">
+        <div><strong>Week 1</strong><span>HTML, CSS, layouts</span></div>
+        <div><strong>Week 2</strong><span>Responsive design and frameworks</span></div>
+        <div><strong>Week 3</strong><span>JavaScript and DOM projects</span></div>
+        <div><strong>Week 4+</strong><span>Portfolio polish and submission</span></div>
+      </div>
+    </section>
+
+    <section class="section bento-section">
+      <div class="bento-card large">
+        <p class="eyebrow">Built for Beginners</p>
+        <h2>Practice like a real front-end developer.</h2>
+        <p>Move from static pages to interactive interfaces with clear project goals and visible progress.</p>
+      </div>
+      <div class="bento-card accent-one">
+        <strong>6+</strong>
+        <span>Portfolio-ready tasks</span>
+      </div>
+      <div class="bento-card accent-two">
+        <strong>100%</strong>
+        <span>Project-focused learning</span>
+      </div>
+      <div class="bento-card wide">
+        <h3>What you will ship</h3>
+        <p>Landing pages, forms, responsive layouts, galleries, DOM features, and polished project summaries.</p>
+      </div>
+    </section>
+
+    <section id="benefits" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Highlights</p>
+        <h2>Benefits of the internship.</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="info-card">
+          <span>01</span>
+          <h3>Real-world experience</h3>
+          <p>Work on practical web pages, forms, galleries, responsive layouts, and JavaScript features.</p>
+        </article>
+        <article class="info-card">
+          <span>02</span>
+          <h3>Mentorship</h3>
+          <p>Receive guidance on task planning, code quality, debugging, and project presentation.</p>
+        </article>
+        <article class="info-card">
+          <span>03</span>
+          <h3>Portfolio projects</h3>
+          <p>Create polished projects that can be shared on LinkedIn, GitHub, or a personal portfolio.</p>
+        </article>
+        <article class="info-card">
+          <span>04</span>
+          <h3>Task-based growth</h3>
+          <p>Complete structured tasks that move from fundamentals to interactive front-end applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tracks-section">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive Tracks</p>
+        <h2>Choose a learning focus.</h2>
+        <p>Select a track to update the recommended tools and project type.</p>
+      </div>
+
+      <div class="track-controls">
+        <button class="track-button is-active" type="button" data-track="frontend">Frontend</button>
+        <button class="track-button" type="button" data-track="javascript">JavaScript</button>
+        <button class="track-button" type="button" data-track="portfolio">Portfolio</button>
+      </div>
+
+      <div class="track-panel" id="trackPanel">
+        <h3>Frontend Track</h3>
+        <p>Focus on responsive pages, CSS Grid, Flexbox, landing pages, and clean visual structure.</p>
+        <ul>
+          <li>Tools: HTML, CSS, Bootstrap</li>
+          <li>Project: Responsive internship landing page</li>
+          <li>Outcome: Better layout and UI design confidence</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="qualifications" class="section split-section">
+      <div>
+        <p class="eyebrow">Qualifications</p>
+        <h2>Desired skills and technologies.</h2>
+        <ul class="skill-list">
+          <li>HTML5 semantic structure</li>
+          <li>CSS3, Flexbox, Grid, and media queries</li>
+          <li>JavaScript basics and DOM manipulation</li>
+          <li>Responsive design and browser testing</li>
+          <li>Git/GitHub fundamentals</li>
+          <li>Basic understanding of React or Bootstrap is helpful</li>
+        </ul>
+      </div>
+
+      <div class="checker-card">
+        <h3>Quick Eligibility Checker</h3>
+        <label><input type="checkbox" class="eligibility"> I know basic HTML and CSS</label>
+        <label><input type="checkbox" class="eligibility"> I can write simple JavaScript</label>
+        <label><input type="checkbox" class="eligibility"> I can dedicate weekly learning time</label>
+        <label><input type="checkbox" class="eligibility"> I want to build portfolio projects</label>
+        <p id="eligibilityResult">Select the boxes to check your readiness.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-heading">
+        <p class="eyebrow">Questions</p>
+        <h2>Internship FAQs.</h2>
+      </div>
+
+      <div class="faq-list">
+        <button class="faq-question" type="button">Is this internship beginner-friendly?</button>
+        <div class="faq-answer">Yes. Basic HTML, CSS, and JavaScript knowledge is enough to start.</div>
+
+        <button class="faq-question" type="button">What kind of projects will I build?</button>
+        <div class="faq-answer">Landing pages, responsive layouts, forms, image galleries, and JavaScript mini apps.</div>
+
+        <button class="faq-question" type="button">Can I save my application draft?</button>
+        <div class="faq-answer">Yes. This page saves your form draft locally in your browser.</div>
+      </div>
+    </section>
+
+    <section id="apply" class="section apply-section">
+      <div class="apply-copy">
+        <p class="eyebrow">Call to Action</p>
+        <h2>Apply for the Web Developer Internship.</h2>
+        <p>Fill out the form below. The demo app validates fields, saves drafts, and shows a confirmation message.</p>
+        <div class="progress-wrap">
+          <span>Application completion</span>
+          <strong id="formProgressText">0%</strong>
+          <div class="progress-track"><div id="formProgressBar"></div></div>
+        </div>
+      </div>
+
+      <form class="application-form" id="applicationForm">
+        <div class="form-field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-field">
+          <label for="duration">Preferred duration</label>
+          <select id="duration" name="duration" required>
+            <option value="">Select duration</option>
+            <option>4 weeks</option>
+            <option>6 weeks</option>
+            <option>8 weeks</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label for="skills">Your current skills</label>
+          <textarea id="skills" name="skills" rows="4" placeholder="Example: HTML, CSS, JavaScript, Bootstrap" required></textarea>
+        </div>
+        <div class="form-actions full">
+          <button class="primary-button" type="submit">Apply Now</button>
+          <button class="secondary-button dark" id="clearDraft" type="button">Clear Draft</button>
+        </div>
+        <p class="form-message full" id="formMessage" aria-live="polite"></p>
+      </form>
+
+      <aside class="preview-card" aria-label="Application preview">
+        <p class="eyebrow">Live Preview</p>
+        <h3 id="previewName">Applicant Name</h3>
+        <p id="previewMeta">Duration and contact details will appear here.</p>
+        <p id="previewSkills">Skills preview updates while you type.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Cognifyz Technologies</strong>
+      <p>For internship inquiries: <a href="mailto:support@cognifyz.com">support@cognifyz.com</a></p>
+      <p>Office: Nagpur, Maharashtra</p>
+    </div>
+    <a href="#apply">Apply Now</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="cognifyz-internship.js"></script>
+</body>
+</html>

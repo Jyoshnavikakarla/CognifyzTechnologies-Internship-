@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFlow Wellness App</title>
+  <link rel="stylesheet" href="fitness-responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard">FitFlow</a>
+
+      <input class="menu-toggle" type="checkbox" id="menu-toggle">
+      <label class="hamburger" for="menu-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links" id="main-menu">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#habits">Habits</a>
+        <a href="#progress">Progress</a>
+        <a class="nav-cta" href="#routine">Build Routine</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard" class="hero app-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Fitness and Wellness App</p>
+        <h1>Plan workouts, track habits, and monitor your wellness streak.</h1>
+        <p class="hero-text">
+          Choose a workout, complete daily wellness habits, build a personal
+          routine, and keep your progress saved in this browser.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#workouts">Choose Workout</a>
+          <a class="secondary-button" href="#habits">Track Habits</a>
+        </div>
+      </div>
+
+      <section class="today-panel" aria-label="Today summary">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Today</p>
+            <h2 id="todayDate">Your wellness dashboard</h2>
+          </div>
+          <button class="small-button ghost-button" id="resetApp" type="button">Reset</button>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <span>Workout</span>
+            <strong id="selectedWorkout">None selected</strong>
+          </div>
+          <div class="summary-card">
+            <span>Habits Done</span>
+            <strong id="habitScore">0/4</strong>
+          </div>
+          <div class="summary-card">
+            <span>Wellness Score</span>
+            <strong id="wellnessScore">0%</strong>
+          </div>
+          <div class="summary-card">
+            <span>Streak</span>
+            <strong id="streakCount">0 days</strong>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="workouts" class="feature-section">
+      <div class="section-heading">
+        <p class="eyebrow">Workout Plans</p>
+        <h2>Select a plan for today.</h2>
+        <p class="section-text">Each workout card can be selected and marked complete. Your choice updates the dashboard instantly.</p>
+      </div>
+
+      <div class="feature-grid workout-grid">
+        <article class="feature-card workout-card" data-workout="Strength Builder" data-minutes="30">
+          <span class="feature-number">30 min</span>
+          <h3>Strength Builder</h3>
+          <p>Bodyweight squats, pushups, lunges, planks, and core work for full-body strength.</p>
+          <button class="card-button select-workout" type="button">Select Plan</button>
+        </article>
+        <article class="feature-card workout-card" data-workout="Cardio Burn" data-minutes="25">
+          <span class="feature-number">25 min</span>
+          <h3>Cardio Burn</h3>
+          <p>Low-equipment intervals with jumping jacks, high knees, mountain climbers, and recovery breaks.</p>
+          <button class="card-button select-workout" type="button">Select Plan</button>
+        </article>
+        <article class="feature-card workout-card" data-workout="Yoga Recovery" data-minutes="20">
+          <span class="feature-number">20 min</span>
+          <h3>Yoga Recovery</h3>
+          <p>Gentle mobility, breathwork, and stretching to support flexibility and recovery.</p>
+          <button class="card-button select-workout" type="button">Select Plan</button>
+        </article>
+      </div>
+
+      <div class="workout-actions">
+        <button class="primary-button button-reset" id="completeWorkout" type="button">Mark Workout Complete</button>
+        <p id="workoutMessage" class="status-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="habits" class="split-section habits-layout">
+      <div>
+        <p class="eyebrow">Daily Habits</p>
+        <h2>Check off the habits you complete today.</h2>
+        <p>
+          The wellness score is calculated from completed habits and workout
+          completion. The app saves your checks locally in the browser.
+        </p>
+      </div>
+
+      <div class="habit-panel">
+        <label class="habit-item">
+          <input type="checkbox" data-habit="hydration">
+          <span>Drink enough water</span>
+        </label>
+        <label class="habit-item">
+          <input type="checkbox" data-habit="sleep">
+          <span>Sleep 7 to 8 hours</span>
+        </label>
+        <label class="habit-item">
+          <input type="checkbox" data-habit="meditation">
+          <span>Practice 10 minutes of mindfulness</span>
+        </label>
+        <label class="habit-item">
+          <input type="checkbox" data-habit="steps">
+          <span>Complete a walking goal</span>
+        </label>
+      </div>
+    </section>
+
+    <section id="progress" class="progress-section">
+      <div class="section-heading">
+        <p class="eyebrow">Progress Insights</p>
+        <h2>Your current wellness progress.</h2>
+      </div>
+
+      <div class="stats-section">
+        <div class="stat-card">
+          <strong id="completedWorkouts">0</strong>
+          <span>Completed workouts</span>
+        </div>
+        <div class="stat-card">
+          <strong id="totalMinutes">0</strong>
+          <span>Total minutes</span>
+        </div>
+        <div class="stat-card">
+          <strong id="bestScore">0%</strong>
+          <span>Best score</span>
+        </div>
+        <div class="stat-card">
+          <strong id="savedRoutineName">Not set</strong>
+          <span>Routine goal</span>
+        </div>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-row">
+          <span>Today completion</span>
+          <strong id="progressPercent">0%</strong>
+        </div>
+        <div class="progress-track" aria-label="Today completion progress">
+          <span id="progressBar"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="routine" class="cta-section routine-section">
+      <div class="section-heading light-heading">
+        <p class="eyebrow">Build Routine</p>
+        <h2>Create your personal weekly routine.</h2>
+        <p>Save a goal, preferred workout time, and focus area. The summary appears in the progress section.</p>
+      </div>
+
+      <form class="routine-form" id="routineForm">
+        <div class="form-field">
+          <label for="goalName">Goal name</label>
+          <input type="text" id="goalName" placeholder="Example: Morning fitness reset" required>
+        </div>
+        <div class="form-field">
+          <label for="focusArea">Focus area</label>
+          <select id="focusArea" required>
+            <option value="">Choose focus</option>
+            <option>Strength</option>
+            <option>Cardio</option>
+            <option>Flexibility</option>
+            <option>Weight management</option>
+            <option>Stress relief</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="workoutTime">Preferred time</label>
+          <input type="time" id="workoutTime" required>
+        </div>
+        <button class="primary-button button-reset" type="submit">Save Routine</button>
+      </form>
+
+      <div class="routine-result" id="routineResult" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="fitness-app.js"></script>
+</body>
+</html>

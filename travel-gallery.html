@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderVista Travel</title>
+  <link rel="stylesheet" href="travel-gallery.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#">WanderVista</a>
+      <div class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#plan">Plan Trip</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">Travel Destinations</p>
+      <h1>Plan beautiful trips with destination ideas, packages, and visual guides.</h1>
+      <p>
+        Discover popular places, compare travel styles, view a clickable image
+        gallery, and explore an automatic CSS slideshow built with HTML and CSS.
+      </p>
+      <div class="hero-actions">
+        <a class="primary-button" href="#destinations">Explore Destinations</a>
+        <a class="secondary-button" href="#plan">Plan a Trip</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="top-slideshow">
+      <div class="slideshow" aria-label="Automatic travel image slideshow">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" alt="Paris slide">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80" alt="Bali slide">
+        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80" alt="Switzerland slide">
+        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80" alt="Maldives slide">
+      </div>
+    </section>
+
+    <section class="quick-search" aria-label="Trip search form">
+      <div>
+        <label for="where">Where to?</label>
+        <input type="text" id="where" placeholder="Maldives, Tokyo, Paris">
+      </div>
+      <div>
+        <label for="style">Travel style</label>
+        <select id="style">
+          <option>Relaxation</option>
+          <option>Adventure</option>
+          <option>Culture</option>
+          <option>Family</option>
+        </select>
+      </div>
+      <div>
+        <label for="month">Month</label>
+        <select id="month">
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+        </select>
+      </div>
+      <button type="button">Search Ideas</button>
+    </section>
+
+    <section id="destinations" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Places</p>
+        <h2>Popular destinations to explore.</h2>
+        <p>Each card includes realistic travel details like ideal duration, best season, and travel mood.</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Eiffel Tower in Paris">
+          <div>
+            <span class="pill">Culture</span>
+            <h3>Paris, France</h3>
+            <p>Art museums, cafes, architecture, and evening walks along the Seine.</p>
+            <ul>
+              <li>Best time: Apr-Jun</li>
+              <li>Ideal stay: 4-5 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali beach and palm trees">
+          <div>
+            <span class="pill">Wellness</span>
+            <h3>Bali, Indonesia</h3>
+            <p>Beach stays, rice terraces, yoga retreats, temples, and tropical cafes.</p>
+            <ul>
+              <li>Best time: May-Sep</li>
+              <li>Ideal stay: 6-8 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" alt="Swiss mountain village">
+          <div>
+            <span class="pill">Scenic</span>
+            <h3>Switzerland</h3>
+            <p>Alpine trains, mountain villages, lakes, hiking routes, and snow views.</p>
+            <ul>
+              <li>Best time: Jun-Sep</li>
+              <li>Ideal stay: 5-7 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai skyline">
+          <div>
+            <span class="pill">Luxury</span>
+            <h3>Dubai, UAE</h3>
+            <p>Modern skyline, desert safaris, shopping, beaches, and family attractions.</p>
+            <ul>
+              <li>Best time: Nov-Mar</li>
+              <li>Ideal stay: 3-5 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" alt="Tokyo city street at night">
+          <div>
+            <span class="pill">City Break</span>
+            <h3>Tokyo, Japan</h3>
+            <p>Food streets, temples, shopping districts, anime culture, and day trips.</p>
+            <ul>
+              <li>Best time: Mar-May</li>
+              <li>Ideal stay: 5-6 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives tropical island">
+          <div>
+            <span class="pill">Beach</span>
+            <h3>Maldives</h3>
+            <p>Private island resorts, clear water, snorkeling, sunset cruises, and calm stays.</p>
+            <ul>
+              <li>Best time: Nov-Apr</li>
+              <li>Ideal stay: 4-5 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal in Agra India">
+          <div>
+            <span class="pill">Heritage</span>
+            <h3>Agra, India</h3>
+            <p>Historic monuments, Mughal architecture, local food, and golden-hour photography.</p>
+            <ul>
+              <li>Best time: Oct-Mar</li>
+              <li>Ideal stay: 2-3 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80" alt="Santorini white buildings and blue sea">
+          <div>
+            <span class="pill">Romantic</span>
+            <h3>Santorini, Greece</h3>
+            <p>Whitewashed villages, blue domes, cliffside stays, sea views, and sunsets.</p>
+            <ul>
+              <li>Best time: Apr-Jun</li>
+              <li>Ideal stay: 3-4 days</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80" alt="Istanbul mosque skyline">
+          <div>
+            <span class="pill">Culture</span>
+            <h3>Istanbul, Turkey</h3>
+            <p>Markets, mosques, Bosphorus cruises, historic streets, and layered culture.</p>
+            <ul>
+              <li>Best time: Apr-May</li>
+              <li>Ideal stay: 4-5 days</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="packages" class="content-section package-section">
+      <div class="section-heading">
+        <h2>Choose the type of trip you want.</h2>
+      </div>
+
+      <div class="package-grid">
+        <article class="package-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai skyline package">
+          <div>
+            <span class="pill">Weekend Escape</span>
+            <h3>Dubai City Break</h3>
+            <p>Enjoy a 3-day trip with desert safari, marina views, shopping, and a relaxed beach evening.</p>
+            <ul>
+              <li>Place: Dubai, UAE</li>
+              <li>Duration: 3 days</li>
+              <li>Includes: Hotel, city tour, desert safari</li>
+            </ul>
+            <strong>From $299</strong>
+          </div>
+        </article>
+        <article class="package-card highlight">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali tropical package">
+          <div>
+            <span class="pill">Signature Holiday</span>
+            <h3>Bali Wellness Retreat</h3>
+            <p>A balanced 6-day plan with beaches, temples, rice terraces, spa time, and cultural stops.</p>
+            <ul>
+              <li>Place: Bali, Indonesia</li>
+              <li>Duration: 6 days</li>
+              <li>Includes: Resort stay, transfers, guided tours</li>
+            </ul>
+            <strong>From $899</strong>
+          </div>
+        </article>
+        <article class="package-card">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" alt="Maldives island package">
+          <div>
+            <span class="pill">Luxury Retreat</span>
+            <h3>Maldives Island Stay</h3>
+            <p>Stay in a private island resort with snorkeling, sunset cruise, clear waters, and slow mornings.</p>
+            <ul>
+              <li>Place: Maldives</li>
+              <li>Duration: 5 days</li>
+              <li>Includes: Villa stay, breakfast, water activities</li>
+            </ul>
+            <strong>From $1,699</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+      <div class="section-heading">
+        <h2>Destination Image Gallery</h2>
+      </div>
+
+      <div class="gallery">
+        <a href="#paris"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Eiffel Tower in Paris"><span>Paris</span></a>
+        <a href="#bali"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali beach and palm trees"><span>Bali</span></a>
+        <a href="#swiss"><img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=80" alt="Swiss mountain village"><span>Switzerland</span></a>
+        <a href="#dubai"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai skyline"><span>Dubai</span></a>
+        <a href="#tokyo"><img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=80" alt="Tokyo city street at night"><span>Tokyo</span></a>
+        <a href="#maldives"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80" alt="Maldives tropical island"><span>Maldives</span></a>
+        <a href="#agra"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80" alt="Taj Mahal in Agra India"><span>Agra</span></a>
+        <a href="#santorini"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80" alt="Santorini Greece"><span>Santorini</span></a>
+        <a href="#istanbul"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="Istanbul Turkey"><span>Istanbul</span></a>
+      </div>
+    </section>
+
+    <section id="plan" class="plan-section">
+      <div>
+        <p class="eyebrow">Plan Your Trip</p>
+        <h2>Send a quick travel enquiry.</h2>
+        <p>Use this static form layout as a realistic front-end booking enquiry section.</p>
+      </div>
+      <form class="plan-form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Email address">
+        <select>
+          <option>Preferred destination</option>
+          <option>Paris</option>
+          <option>Bali</option>
+          <option>Switzerland</option>
+          <option>Maldives</option>
+          <option>Tokyo</option>
+        </select>
+        <button type="button">Request Itinerary</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="lightbox" id="paris"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80" alt="Large view of Paris"></div>
+  <div class="lightbox" id="bali"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=80" alt="Large view of Bali"></div>
+  <div class="lightbox" id="swiss"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1400&q=80" alt="Large view of Switzerland"></div>
+  <div class="lightbox" id="dubai"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80" alt="Large view of Dubai"></div>
+  <div class="lightbox" id="tokyo"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1400&q=80" alt="Large view of Tokyo"></div>
+  <div class="lightbox" id="maldives"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1400&q=80" alt="Large view of Maldives"></div>
+  <div class="lightbox" id="agra"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80" alt="Large view of Agra"></div>
+  <div class="lightbox" id="santorini"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80" alt="Large view of Santorini"></div>
+  <div class="lightbox" id="istanbul"><a href="#gallery" class="close">Close</a><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=80" alt="Large view of Istanbul"></div>
+</body>
+</html>
